@@ -2,9 +2,9 @@
 
 Backend & AI Engineer based in Ho Chi Minh City, Vietnam.
 
-I transitioned from logistics operations into software engineering focusing on async Python backends, Applied-AI, and hardening AI systems for production
+I transitioned from logistics operations into software engineering focusing on async Python backends and Applied-AI for production systems.
 
-I am roughly 1 year into my professional engineering journey, including 2 months as a Software Developer in Chandigarh, India.
+1 year into my professional engineering journey, including 2 months as a Software Developer in Chandigarh, India.
 
 ---
 
@@ -22,10 +22,10 @@ I am roughly 1 year into my professional engineering journey, including 2 months
 
 ### 🛠️ What I Focus On
 
-- **Applied Generative AI**: Designing production-grade LLM services with low-latency streaming (WebSockets, FastAPI), strict structured outputs, and clean API contracts.
-- **AI-Native Architecture**: Building workflows designed from the ground up around autonomous agents and Model Context Protocol (MCP) tool ecosystems.
-- **AI System Reliability & Guardrails**: Hardening non-deterministic AI behavior against schema drift, prompt vulnerabilities, and unintended side effects using strict validation and AST invariants.
-- **Deterministic Chaos Testing**: Stress-testing agent workflows with simulated latency, fault injections, and replay engines rather than relying on guesswork.
+- **Applied Generative AI**: Designing production-grade LLM services.
+- **AI-Native Architecture**: Building workflows designed from the ground up around autonomous agents and MCP tool.
+- **AI System Reliability & Guardrails**: Hardening non-deterministic AI behavior using strict validation and AST invariants.
+- **Deterministic Chaos Testing**: Stress-testing agent workflows with simulated latency, fault injections, and replay engines.
 
 ---
 
@@ -38,7 +38,7 @@ I am roughly 1 year into my professional engineering journey, including 2 months
 - Implements AST invariant mining via Tree-Sitter to verify transactional integrity rules.
 - **Links**: [PyPI Package](https://pypi.org/project/arc-reliability/) • [Source Code]((https://github.com/avandall/ARC))
 
-#### 2. Low-Latency English App
+#### 2. Low-Latency TTS English App
 *Real-time audio AI service*
 - Built a bidirectional streaming pipeline decoupling real-time dialogue generation from background evaluation workers.
 - Integrated WebSocket streaming with acoustic filler cues to cut Time-to-First-Audio (TTFA) from 3,500ms down to <200ms.
@@ -47,7 +47,7 @@ I am roughly 1 year into my professional engineering journey, including 2 months
 #### 3. Concurrency-Safe WMS Core Engine
 *Domain-Driven Warehouse Management Backend*
 - Designed around real-world warehousing constraints (FIFO rules, slotting optimization, capacity limits).
-- Handled high-concurrency checkout and stock movement using PostgreSQL row-level locks (`SELECT ... FOR UPDATE`) and Redis distributed locks to prevent overselling.
+- Handled high-concurrency checkout and stock movement using PostgreSQL row-level locks and Redis distributed locks to prevent overselling.
 - **Links**: [Source Code]((https://github.com/avandall/ARC)](https://github.com/avandall/WMS_Core))
 ---
 
