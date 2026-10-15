@@ -1,9 +1,10 @@
-# Hi, I'm Vu Nguyen (avandall) 👋
+# Hi, I'm Vu Nguyen 👋
 
-Backend & AI Engineer based in Ho Chi Minh City, Vietnam.  
-I transitioned from logistics operations into software engineering by automating operational bottlenecks with code. Today, my focus is on **asynchronous Python backends**, **low-latency streaming**, and **hardening AI systems for production reliability**.
+Backend & AI Engineer based in Ho Chi Minh City, Vietnam.
 
-I am roughly 1 year into my professional engineering journey. I care deeply about deterministic testing, system concurrency, and pragmatic software architecture over industry hype.
+I transitioned from logistics operations into software engineering focusing on async Python backends, Applied-AI, and hardening AI systems for production
+
+I am roughly 1 year into my professional engineering journey, including 2 months as a Software Developer in Chandigarh, India.
 
 ---
 
@@ -21,10 +22,10 @@ I am roughly 1 year into my professional engineering journey. I care deeply abou
 
 ### 🛠️ What I Focus On
 
-- **Backend & Microservices**: Building clean, async APIs with FastAPI, handling concurrent workloads, and connecting services via gRPC and Redis Streams.
-- **AI Agent Reliability & Guardrails**: Developing Model Context Protocol (MCP) tool servers and mitigating LLM failure modes (schema drift, race conditions, timeout handling).
-- **Chaos Engineering & Testing**: Validating failure modes using property-based testing and deterministic simulations rather than relying on guesswork.
-- **Domain Modeling**: Applying Domain-Driven Design (DDD) to software problems, drawing from real-world operations and inventory management.
+- **Applied Generative AI**: Designing production-grade LLM services with low-latency streaming (WebSockets, FastAPI), strict structured outputs, and clean API contracts.
+- **AI-Native Architecture**: Building workflows designed from the ground up around autonomous agents and Model Context Protocol (MCP) tool ecosystems.
+- **AI System Reliability & Guardrails**: Hardening non-deterministic AI behavior against schema drift, prompt vulnerabilities, and unintended side effects using strict validation and AST invariants.
+- **Deterministic Chaos Testing**: Stress-testing agent workflows with simulated latency, fault injections, and replay engines rather than relying on guesswork.
 
 ---
 
@@ -35,19 +36,19 @@ I am roughly 1 year into my professional engineering journey. I care deeply abou
 - An interceptor SDK (`@trace_agent`, `@trace_tool`) designed to trace, test, and inject faults into autonomous agent runs.
 - Features virtual clock injection, sandboxed fork-replay, and automated delta-debugging (`ddmin`) to reduce transient LLM failures into reproducible test cases.
 - Implements AST invariant mining via Tree-Sitter to verify transactional integrity rules.
-- **Links**: [PyPI Package](https://pypi.org/project/arc-reliability/) • [Source Code](https://github.com/avandall)
+- **Links**: [PyPI Package](https://pypi.org/project/arc-reliability/) • [Source Code]((https://github.com/avandall/ARC))
 
-#### 2. Low-Latency Conversational Voice Pipeline
+#### 2. Low-Latency English App
 *Real-time audio AI service*
 - Built a bidirectional streaming pipeline decoupling real-time dialogue generation from background evaluation workers.
 - Integrated WebSocket streaming with acoustic filler cues to cut Time-to-First-Audio (TTFA) from 3,500ms down to <200ms.
-- **Links**: [Live Application Demo](https://haku-hakus.onrender.com/) • [Portfolio Walkthrough](https://avandall.github.io/Portfolio/)
+- **Links**: [Live Application Demo](https://haku-hakus.onrender.com/)
 
 #### 3. Concurrency-Safe WMS Core Engine
 *Domain-Driven Warehouse Management Backend*
 - Designed around real-world warehousing constraints (FIFO rules, slotting optimization, capacity limits).
 - Handled high-concurrency checkout and stock movement using PostgreSQL row-level locks (`SELECT ... FOR UPDATE`) and Redis distributed locks to prevent overselling.
-
+- **Links**: [Source Code]((https://github.com/avandall/ARC)](https://github.com/avandall/WMS_Core))
 ---
 
 ### 🧰 Tech Stack & Tools
@@ -61,13 +62,4 @@ I am roughly 1 year into my professional engineering journey. I care deeply abou
 
 ---
 
-### 📈 Current Growth & Philosophy
-
-> *"Code is a liability; clear domain boundaries and reproducible tests are the assets."*
-
-I recognize that I am early in my engineering path, which is why I actively seek:
-- Rigorous peer code reviews and architectural critique.
-- Complex backend distributed system challenges.
-- Collaborations on open-source reliability tools and production AI systems.
-
-Feel free to explore my repositories, test [arc-reliability](https://pypi.org/project/arc-reliability/), or reach out for collaboration.
+> Early in my engineering path—focused on turning brittle, non-deterministic AI into resilient production systems. Always seeking tough code reviews, complex failure modes, and opportunities to harden open-source AI tooling alongside experienced engineers.
